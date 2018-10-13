@@ -1,6 +1,16 @@
-## Python:
+[Python](python.md)
 
-- [Variablen, Typen, arithmetische und boolesche Operatoren](https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb)
+------------------------------------
+
+Algorithmus und Programm
+
+Rekursion  
+
+--------------------------------------------------
+
+Codierung ganzer Zahlen
+
+
 
 
 
