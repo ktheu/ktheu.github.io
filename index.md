@@ -1,4 +1,6 @@
-## [Grundlagen](https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb)
+## Python:
+
+- [Grundlagen: ](https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb)
 
 
 
