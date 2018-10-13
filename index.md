@@ -1,6 +1,6 @@
 ## Inhalte
 
-[Python - Grundlagen](test.html)
+[Python - Grundlagen](test.md)
 
 ------------------------------------
 
