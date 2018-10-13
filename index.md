@@ -1,6 +1,6 @@
 ## Python:
 
-- [Grundlagen: ](https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb)
+- [Variablen, Typen, arithmetische und boolesche Operatoren](https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb)
 
 
 
