@@ -1,3 +1,5 @@
+## Inhalte
+
 [Python - Grundlagen](python.md)
 
 ------------------------------------
@@ -41,6 +43,10 @@ Baum
 Suchbaum
 
 Spielbaum
+
+-----------------------------------------------
+
+Datenstrukturen in Python
 
 ------------------------------------------------
 
