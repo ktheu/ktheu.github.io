@@ -1,6 +1,6 @@
 ### Python
 
-[Python - Grundlagen]("https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb")
+[Grundlagen](010_grundlagen.ipynb)
 
 ------------------------------------
 
