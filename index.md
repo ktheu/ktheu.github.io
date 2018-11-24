@@ -1,7 +1,13 @@
 ### Python
 
-<a href="https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb">Grundlagen </a>
+
 __[Variablen, Typen, arithmetische Operatoren](https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb)__
+[Aufgaben](010_grundlagen.pdf) - [Lösungen](010_grundlagen_L.pdf)
+
+
+__[Strings, Ein/Ausgabe, Verzweigungen, Schleifen](https://github.com/ktheu/KursNotebooks/blob/master/020_schleifen.ipynb)__
+
+__[Funktionen](https://github.com/ktheu/KursNotebooks/blob/master/030_funktionen.ipynb)__
 
 ------------------------------------
 
