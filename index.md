@@ -1,7 +1,8 @@
 ### Python
 
-[Grundlagen](010_grundlagen.ipynb)
-<a href="https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb">
+<a href="https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb">Grundlagen </a>
+__[Variablen, Typen, arithmetische Operatoren](https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb)__
+
 ------------------------------------
 
 Algorithmus und Programm
