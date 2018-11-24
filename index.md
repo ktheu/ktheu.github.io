@@ -1,7 +1,7 @@
 ### Python
 
 [Grundlagen](010_grundlagen.ipynb)
-
+<a href="https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb">
 ------------------------------------
 
 Algorithmus und Programm
