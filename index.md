@@ -1,6 +1,6 @@
-## Inhalte
+### Python
 
-[Python - Grundlagen](python.md)
+[Python - Grundlagen]("https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb")
 
 ------------------------------------
 
@@ -22,7 +22,7 @@ Huffman-Algorithmus
 
 Komplexität
 
-Sort: Selectionsort, Bubblesort, Mergesort, Quicksort 
+Sort: Selectionsort, Bubblesort, Mergesort, Quicksort
 
 Sort: Heapsort
 
@@ -79,10 +79,3 @@ Datenbanken
 ---------------------------------------------------
 
 Kryptographie
-
-
-
-
-
-
-
