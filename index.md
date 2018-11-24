@@ -2,7 +2,7 @@
 
 
 __[Variablen, Typen, arithmetische Operatoren](https://github.com/ktheu/KursNotebooks/blob/master/010_grundlagen.ipynb)__
-[Aufgaben](010_grundlagen.pdf) - [Lösungen](010_grundlagen_L.pdf)
+[Aufgaben](Musteraufgaben/010_grundlagen.pdf) - [Lösungen](Musteraufgaben/010_grundlagen_L.pdf)
 
 
 __[Strings, Ein/Ausgabe, Verzweigungen, Schleifen](https://github.com/ktheu/KursNotebooks/blob/master/020_schleifen.ipynb)__
