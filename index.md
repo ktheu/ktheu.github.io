@@ -1,7 +1,6 @@
 ----------------------------------------------
+__[InfoAG](https://ktheu.github.io/InfoAG/)__
 
-InfoAG
-
-InfoKurs
+__[InfoKurs](https://ktheu.github.io/InfoKurs/)__)
 
 -------------------------------------------------
