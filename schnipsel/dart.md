@@ -12,6 +12,26 @@ void main() {    // hier beginnts
 print(x.runtimeType) // den Typ von x ausdrucken
 ```
 
+#### Einlesen von Daten
+
+##### stdin 
+Mehrere ints in einer Zeile in eine Liste speichern
+```
+var line1 = stdin.readLineSync().split(' ').map((x) => int.parse(x)).toList();
+```
+
+##### File _[doc](https://api.dartlang.org/stable/2.5.1/dart-io/File-class.html)_
+
+Für kleine Dateien kann man auch ohne asynchrones Lesen auskommen. Beispiel: die erste Zeile wegwerfen, dann
+alle übrigen als ints in eine Liste speichern.
+```
+import 'dart:io';
+File f = File('input2.txt');
+var b = f.readAsLinesSync();
+b.removeAt(0);
+var a = (b.map((x) => int.parse(x))).toList();
+```
+
 #### Strings _[doc](https://api.dartlang.org/stable/2.5.1/dart-core/String-class.html)_
 
 String-Interpolation: die geschweiften Klammern können weggelassen werden, wenn einfache Variablen ausgewertet werden.
@@ -51,22 +71,6 @@ a.indexOf(x)      // Index eines Elements
 maxVal = a.reduce(max)  
 minVal = a.reduce(min)
 ```
-
-#### File _[doc](https://api.dartlang.org/stable/2.5.1/dart-io/File-class.html)_
-
-Für kleine Dateien kann man auch ohne asynchrones Lesen auskommen. Beispiel: die erste Zeile wegwerfen, dann
-alle übrigen als ints in eine Liste speichern.
-```
-import 'dart:io';
-File f = File('input2.txt');
-var b = f.readAsLinesSync();
-b.removeAt(0);
-var a = (b.map((x) => int.parse(x))).toList();
-
-```
-
-
-
 
 #### Asynchrone Programmierung _[doc](https://dart.dev/codelabs/async-await)_
 
