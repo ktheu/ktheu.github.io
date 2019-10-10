@@ -14,6 +14,170 @@ The type of a variable is not usually set by the programmer; rather, it is decid
 ?>
 ```
 
+```
+<?="This is another PHP example.";?>  // Shortcircuit syntax
+```
+
+```
+<?
+print "This is another PHP example.";  // nur wenn short_open_tag on
+?>
+```
+
+#### Kommentare
+```
+// comment
+#  comment
+/*  multiple 
+line comment  */   
+```
+
+#### Variablen
+Variablennamen sind case-sensitiv. Variablen müssen nicht vor Gebrauch deklariert werden, sondern sind
+mit der ersten Initialisierung deklariert. Mit einem & nach dem Gleichheitszeichen oder vor dem Variablennamen
+werden die Variablen nicht über den Wert, sondern über eine Referenz initialisiert.
+```
+$a = 5;    
+$b =& $a;  // oder
+$b = &$a;  // so. Wenn $a sich ändert, ändert sich auch $b.
+```
+
+#### Superglobals _[doc](https://www.php.net/manual/en/language.variables.superglobals.php)_
+Superglobals sind von überall zugreifbare Variablen, die Information über die Umgebung liefern
+
+```
+foreach ($_SERVER as $var => $value) {
+    echo "$var => $value <br />";
+}
+
+$_GET, $_POST ...
+```
+#### Konstanten
+Konstanten könne mit *define* oder dem Schlüsselwort *const* definiert werden. Sie beginnen nicht mit $. Sie
+sind gobal verfügbar und bestehen üblicherweise aus Großbuchstaben.
+
+```
+define("PI", 3.1415);   // oder
+const PI = 3.1415;
+```
+
+#### Operatoren
+```
+&&, AND, ||, OR, !, NOT, XOR  // boolesche Operatoren
+==, !=    // gleicher, ungleicher Inhalt
+===       // gleicher Inhalt und Typ
+
+$b = ($a == 5) ? 4 : 6;   // $b wird 4, falls $a gleich 5, sonst 6
+$b = ($a == 5) ? : 6;     // $b wird 5, falls $a gleich 5, sonst 6
+$b = $a ?? 6;             // $b wird zu $a, falls $a einen Wert hat, sonst 6
+```
+
+#### Daten ausgeben
+*echo* benötigt keine Klammern, mehrere Ausgaben können mit Komma getrennt werden.
+Bei doppelten Anführungszeiten können einfache Variablen direkt in den String eingesetzt werden.
+Zur Verdeutlichung nimmt man meist geschweifte Klammern.
+```
+echo $x , $s;
+echo "$x und $s"
+echo "{$x} und {$s}";
+```
+*printf* _[doc](https://www.php.net/manual/en/function.printf.php)_
+ist gut, wenn statischer und dynamischer Inhalt formatiert gemischt werden soll.
+```
+printf("Der %s ist %d Jahre alt", $s, $x); 
+```
+*sprintf* wie *printf*, nur wird die Ausgabe als String zurückgegeben
+```
+$ausgabe = sprintf("Der %s ist %d Jahre alt", $s, $x); 
+```
+
+#### Booleans
+*true*, *false*. 
+```
+if ($b) .... // false, wenn $b = false, 0, '0', null
+```
+
+#### Integers
+In einer mathematischen Operation wird ein String automatisch zum Integer gecastet, wenn dies Sinn macht.
+```
+42      // decimal
+0755    // oktal
+0xa3    // hexadezimal
+0b1011  // binär
+```
+
+#### Casting
+z.B: (bool), (int), (float), (string)
+```
+$a = 3.14;
+$b = (int) $a;
+```
+
+#### Typen prüfen
+Skalare Typen sind bool, int, float, string
+```
+is_array(), is_bool(), is_float(), is_integer(), is_null(), is_numeric(),
+is_object(), is_resource(), is_scalar(), is_string()
+```
+
+#### Verzweigungen
+Besteht der Rumpf nur aus einer Zeile, können die geschweiften Klammern weggelassen werden.
+```
+if ($bool1) {
+
+}
+elseif ($bool2) {
+
+}
+else {
+
+}
+``` 
+
+```
+switch($category) {
+    case "news":
+       ...
+       break;
+    case "weather":
+       ... 
+       break;
+    default;
+       ...
+}
+``` 
+
+
+#### Schleifen
+``` 
+while ($bool) {
+
+}
+
+do {
+
+} while ($bool);
+
+for ($i=0; $i<$n; $i++) {
+
+}
+
+$a = [1,2,3];
+foreach ($a as $x) echo $x;
+
+foreach ($a as $k => $v) echo $k . "->" . $v . "\n";  // liefert key-value Paare
+``` 
+#### File Inclusion
+Die Klammern können auch weggelassen werden. Die Anweisung muss auch in einem php-Tag stehen.
+```
+include ("/usr/local/lib/php/wjgilmore/init.inc.php");
+include_once (....)
+require (....)        // wie include, aber Fehler wenn file nicht vorhanden
+require_once (...)
+```
+
+
+
 #### Files einlesen
 
 ```
@@ -31,8 +195,6 @@ while (!feof($fh)) {
 }
 fclose($fh);
 ```
-
-
 
 #### Arrays
 
@@ -69,6 +231,10 @@ for ($i = 0; $i < count($a); $i++) {
 foreach ($a as $x) {
     echo $x . "\n";
 }
+
+foreach ($a as $x) {
+    echo $x . "<br/> ";     // für Zeilenumbruch im Browser
+}
 ```
 
 
@@ -82,6 +248,6 @@ $a.sort();            // sortieren
 min($a), max($a), count($a) oder sizeOf($a);    // min, max und Anzahl Elemente
 ```
 
-##### Verschiedenes
+ 
 
-printf _[doc](https://www.php.net/manual/en/function.printf.php)_
+ 
