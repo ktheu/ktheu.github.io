@@ -248,6 +248,65 @@ $a.sort();            // sortieren
 min($a), max($a), count($a) oder sizeOf($a);    // min, max und Anzahl Elemente
 ```
 
- 
+#### OOP
 
- 
+##### statische Variablen
+Auf statische Variablen wird in der Klasse mit self:: und außerhalb der Klasse mit Klassenname:: zugegriffen.
+
+```
+class Visitor {
+    public static $visitors = 0;
+    function __construct() {
+         self::$visitors++;
+    }
+}
+
+$v = new Visitor();
+echo Visitor::$visitors
+``` 
+
+#### Authentication
+
+##### Verzeichnis mit .htaccess schützen
+
+In das zu schützende verzeichnis die Datei *.htaccess* einfügen mit Inhalt:
+```
+AuthUserFile ../.htpasswd
+AuthType Basic
+AuthName "My Files"
+Require valid-user
+```
+
+Das File .htpasswd liegt im Beispiel oberhalb des root-Verzeichnisses *htdocs*.
+Die Datei .htpasswd wird erzeugt mit (die shell von Xampp öffnen)
+```
+htpasswd -c .htpasswd biene   # der Benutzername ist biene
+```
+
+##### Zugriff mit php und einem user/pw -Paar schützen
+
+```
+<?php
+$secret = 'b658b26bee93ff47ae55410afd0e7dc70307e2a4';
+if (($_SERVER['PHP_AUTH_USER'] != 'biene') || (hash('sha1', $_SERVER['PHP_AUTH_PW']) != $secret)
+) {
+    header('WWW-Authenticate: Basic Realm="Secret Stash"');
+    header('HTTP/1.0 401 Unauthorized');
+    print('You must provide the proper credentials!');
+    exit;
+}
+
+```
+Für den Nutzer *biene* wird der Hash für das Passwort *honig* in der Xampp-Shell durch folgendes
+Kommando erzeugt:
+
+```
+php -r "echo hash('sha1', 'honig');
+```
+
+Damit dies bei dem Server von DMSolutions funktioniert, muss die folgende Zeile in der .htaccess-Datei stehen.
+In dem Ordner, in dem auch das Passwort abgefragt wird.
+Sonst tuen die $_SERVER-Variablen nicht.
+```
+SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
+```
