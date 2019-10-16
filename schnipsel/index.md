@@ -10,4 +10,6 @@
 
 - _[Php](./php.md)_
 
+- _[Sql](./sql.md)_
+
 - _[Git](./git.md)_

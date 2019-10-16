@@ -181,6 +181,12 @@ require_once (...)
 #### Files einlesen
 
 ```
+__FILE__  // den Namen der aktuellen Datei
+__DIR__  wie  dirname(__FILE__)  // Name des aktuellen Directories
+
+```
+
+```
 $lines = file('input1.txt');
 foreach ($lines as $line) {
     echo $line;
@@ -309,4 +315,13 @@ In dem Ordner, in dem auch das Passwort abgefragt wird.
 Sonst tuen die $_SERVER-Variablen nicht.
 ```
 SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
+```
+
+#### Redirect
+```
+<?php
+header("Location: http://www.informatik42.de/codingame"); /* Redirect browser */
+/* Make sure that code below does not get executed when we redirect. */
+exit;
+?>
 ```

@@ -112,6 +112,47 @@ pname(p1);   // -> Willi
 ```
 
 #### Promises
+
+Dem Konstruktor eines Promise wird eine Funktion *f* übergeben, die wiederum 2 Funktionen als Argumente
+hat, üblicherweise *resolve* und *reject* genannt, in dem Beispiel: *g* und *h*. In der Funktion *f* wird
+das gemacht, was das Promise erledigen soll und dann kann man zwei Fälle unterscheiden. Wenn die Arbeit des Promise zu einem guten Ende gekommen ist, übergibt man das Ergebnis dieser Arbeit  (einen String, eine Zahl, ein Objekt) der 1. Funktion *g* (= *resolve*), wenn man auf einen Fehler stößt, übergibt etwas (einen String, eine Zahl, ein Objekt) an die 2.Funktion *h* (= *reject*). 
+Mit *then* werden bei dem Promise-Objekt *p* zwei callback Funktionen *f1* und *f2* registiert. Wenn das Promise 
+die *g*-Funktion aufruft (also im *resolve*-Fall) wird damit auch *f1* aufgerufen und als Argument an *f1* wird übergeben, was die *g* Funktion beim Aufruf erhalten hat. Beim Aufruf der *h*-Funktion (*reject*-Fall) wird analog die Funktion *f2* aufgerufen.
+
+Auch wenn - wie hier im Beispiel - bei der Arbeit des Promise keine zeitliche Verzögerung im Spiel ist, 
+wird dennoch erst der laufende call-stack abgearbeitet. Die Aufrufe der callback Funktionen kommen in die 
+eventqueue und von dort wird erst etwas geholt, wenn der stack leer ist.
+Siehe: https://vimeo.com/96425312   
+
+
+```
+function f(g,h) {
+    let x = 5;
+    if (x < 10) g('Done');
+    else h('Ohno');
+}
+
+function f1(x) {
+    console.log(x)
+}
+
+function f2(x) {
+    console.log(x)
+}
+
+let p = new Promise(f);
+p.then(f1,f2);
+console.log("Aha");
+
+
+Ausgabe:
+Aha
+Done
+```
+
+
+
+
 ```
 const fetchData = () => {  
     const promise = new Promise((resolve, reject) => {
