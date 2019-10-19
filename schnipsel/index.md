@@ -4,6 +4,8 @@
 
 - _[JavaScript](./javascript.md)_
 
+- _[JQuery](./jquery.md)_
+
 - _[Java](./java.md)_
 
 - _[Dart](./dart.md)_

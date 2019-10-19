@@ -37,10 +37,21 @@ b = a.slice()     // copy
 b = [...a]        // copy mit Spread-Operator
 ```
 
-Durch ein Array iterieren
+Durch ein Array laufen
 ```
+a = [1,2,3]
+for (let i = 0; i < a.length; i++) {
+  console.log(a[i]);
+}
+ 
+a.forEach(function(x) {
+  console.log(x);
+});
+
+a.forEach((x) => console.log(x));
+
 for (let x of a) {
-    console.log(x);
+  console.log(x);
 }
 ```
 Array Destructuring
@@ -88,13 +99,19 @@ function sum(...theArgs) {
 #### Objects
 
 ```
-const p1 = {    // Object
+
+var n = {};        // ein leeres Objekt
+
+const p1 = {       // Object
     name: 'Willi',
     age: 29,
     greet() {
         console.log('Hi i am ' + this.name);
     }
 }
+
+console.log(p1.name);   // oder:
+console.log(p1['name']);
 
 p2 = {...p1}  // copy von p1
 
@@ -189,3 +206,19 @@ let sum = (A,I) => A + I;  // A = Accumulator, I = Item
 let x = a.map(add).reduce(sum,9);
 console.log(x);
 ```
+
+#### Modules (ES6)
+
+ Der exportierende Module muss kann irgendwo in der Hierarchie stehen, das importierende Module irgendwo anders in der Hierarchie, aber ganz oben (index.html, index.php) muss das importierende Modul an seinem Platz mit dem script-tag deklariert werden. 
+
+```
+In index.html:
+<script type="module" src="./dir2/b.js"> </script>
+
+In dir1/a.js
+export let x = 44;
+
+in dir2/b.js
+import { x } from './../dir1/a.js';
+
+
