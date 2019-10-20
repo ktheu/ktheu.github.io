@@ -145,6 +145,7 @@ Liste der jQuery Traversing-Methoden __[doc](https://www.w3schools.com/jquery/jq
 
 Liste der jQuery Ajax-Methoden __[doc](https://www.w3schools.com/jquery/jquery_ref_ajax.asp)__.
 Im Zentrum steht das XMLHttpRequest-Objekt __[doc](https://www.w3schools.com/xml/ajax_xmlhttprequest_create.asp)__
+Using XMLHttpRequest __[doc](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)__
 
 AJAX = Asynchronous JavaScript and XML.
 

@@ -222,6 +222,7 @@ count($a)               // Länge des Arrays
 
 Associative arrays  
 ```
+$a = array() // leeres Array
 $m = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
 array_key_exists('Ben', $m)    // existiert key?
 array_keys($m)             // Array mit allen keys
