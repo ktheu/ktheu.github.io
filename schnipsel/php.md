@@ -326,3 +326,72 @@ header("Location: http://www.informatik42.de/codingame"); /* Redirect browser */
 exit;
 ?>
 ```
+
+#### Date and Time
+DateTime format-Parameter: __[doc](https://www.php.net/manual/en/function.date.php)__
+Liste der Zeitzonen __[doc](https://www.php.net/manual/en/timezones.php)__
+``` 
+date_default_timezone_set("Europe/Berlin");
+$CurrentTime = time();
+$DateTime = strftime("%Y-%m-%d %H:%M:%S",$CurrentTime);  // SQL-Format
+echo $DateTime;
+```
+
+#### htmlentities
+Wenn mit echo ein String ausgegeben wird, kann so verhindert werden, dass Teile davon als
+html verstanden wird.
+```
+<?php
+$str = "Ein 'Anführungszeichen' ist <b>fett</b>";
+
+// Gibt aus: Ein 'Anf&uuml;hrungszeichen' ist &lt;b&gt;fett&lt;/b&gt;
+echo htmlentities($str);
+
+// Gibt aus: Ein &#039;Anf&uuml;hrungszeichen&#039; ist &lt;b&gt;fett&lt;/b&gt;
+echo htmlentities($str, ENT_QUOTES);
+?>
+```
+
+#### Verschiedenes
+
+Wenn man auf einer Seite submit gedrückt hat und dieselbe Seite in dem action-Attribut steht, dann kann
+man so auf eine andere Seite verzweigen:
+```
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {                              
+require('process-register-page.php');
+} // End of the main Submit conditional.
+```
+Nach Drucken des Submit-Buttons wird die js-Funktion checked() ausgeführt.
+```
+<form action="register-page.php" method="post" onsubmit="return checked();" name="regform" id="regform">
+```
+Wenn die Seite nochmal angezeigt wird, bleiben Eingaben erhalten:
+```
+<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" maxlength="40" required value="<?php if (isset($_POST['last_name'])) echo $_POST['last_name']; ?>">
+```
+
+Eine Funktion zur Erzeugung eines Passwort-Hashs ist eingebaut _[doc](https://www.php.net/manual/en/function.password-hash.php)_
+```
+$hashed_passcode = password_hash($password1, PASSWORD_DEFAULT);
+```
+Um die Fehlermeldung nach einem missglückten execute zu erhalten
+```
+mysqli_stmt_execute($q);
+printf("Error: %s.\n", mysqli_stmt_error($q));
+```
+
+#### Sessions
+
+Auf jeder Seite, die in einer Session benutzt wird, sollte zu Beginn: sesson_start() stehen.
+Wenn vorher auf dieser Seite Output generiert wird, funktioniert die Anweisung nicht und die Session wird für
+diese Seite nicht aktiviert ("headers already sent-error");
+
+
+```
+unset($_SESSION['name']);   // Löschen einer Session-Variable
+$_SESSION = [];             // Um alle Session-Variablen zu löschen
+unset($_SESSION);           // NICHT VERWENDEN - jetzt können keine neuen Session-Variablen mehr gespeichert werden.
+
+```
+
+Um den session_cookie

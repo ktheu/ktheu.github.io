@@ -6,6 +6,8 @@
 
 - _[JQuery](./jquery.md)_
 
+- _[HTML](./html.md)_
+
 - _[Java](./java.md)_
 
 - _[Dart](./dart.md)_
