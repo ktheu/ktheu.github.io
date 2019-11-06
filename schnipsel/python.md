@@ -67,3 +67,11 @@ from collections import Counter
 m = Counter(a)
 # m = dict(Counter(a))
 ```
+
+#### Module OS
+```
+import os
+print(os.getcwd())   # listet das current working directory
+
+
+```
