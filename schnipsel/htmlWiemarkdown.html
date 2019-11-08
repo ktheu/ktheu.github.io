@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Markdown wie Html</title>
+  <link href="./github-markdown.css" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <article class="markdown-body">
+    <h2>Große Überschrift mit h2</h2>
+
+    <h4>Große Überschrift mit h4</h4>
+
+    <p> Normaler Text. <br>
+      Zeilenvorschub mit br-tag.</p>
+
+
+    <p><em>kursiv</em> und <strong>fett</strong> mit <code>em-tag</code> und <code>strong-tag</code>.
+
+      <pre>
+Text als
+Code mit pre-tag </pre>
+
+      <p>
+        Link mit a-tag <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">doc</a>
+      </p>
+
+      <p>Bilder mit img-tag und width="xxx" </p>
+
+      <img src="./heap5.png" width=200>
+
+
+      <p>Linie mit hr-tag</p>
+      <hr>
+
+      <h4>Quiz</h4>
+      <p>In <code> check.js</code> stehen die Lösungen der Aufgaben. Für Aufgabe <code>0</code> haben
+        die Fragen die ids <code>q00, q01, q02</code>. Der Knopf hat die id <code>a0</code> und ruft bei
+        onclick die Funktion <code>checkanswer(0)</code> auf.</p>
+
+        <p>In check.js wird zu Beginn eine Variable <code>name</code> gesetzt.
+          Die Anworten werden im localstorage unter dem Namen <code>name+xx</code>  gespeichert, 
+          wobei xx die id-Ziffern der Fragen sind.  </p>
+
+      <h4>Aufgabe 1</h4>
+
+      <p> Sortiere die Zahlenfolge mit SelectionSort.
+        Schreibe für die ersten drei Durchgänge je eine Zeile.</p>
+
+      <pre>13 4 92 42 11 7 12</pre>
+
+      <p>1. Durchgang <input id="q00" size="30"></p>
+      <p>2. Durchgang <input id="q01" size="30"></p>
+      <p>3. Durchgang <input id="q02" size="30"></p>
+
+      <button type="button" onclick="checkanswer(0)">Check</button>&nbsp;<span id="a0"></span></p>
+
+    <h4>Aufgabe 2</h4>
+
+    <p> Sortiere die Zahlenfolge mit BubbleSort.
+      Schreibe für die ersten drei Durchgänge je eine Zeile.</p>
+
+    <pre>2 22 14 25 1 13 9</pre>
+
+    <p>1. Durchgang <input id="q10" size="30"></p>
+    <p>2. Durchgang <input id="q11" size="30"></p>
+    <p>3. Durchgang <input id="q12" size="30"></p>
+
+    <button type="button" onclick="checkanswer(1)">Check</button>&nbsp;<span id="a1"></span></p>
+
+  </article>
+</body>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+</script>
+<script type="text/javascript" src="check.js"></script>
+
+</html>
