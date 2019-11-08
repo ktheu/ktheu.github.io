@@ -1,6 +1,6 @@
 ### Schnipsel
 
-- _[Python](./python.md)_
+- [Python](./python.md)
 
 - _[JavaScript](./javascript.md)_
 
@@ -17,3 +17,5 @@
 - _[Sql](./sql.md)_
 
 - _[Git](./git.md)_
+
+- [Markdown](./markdown.md)
