@@ -2,20 +2,20 @@
 
 - [Python](./python.md)
 
-- _[JavaScript](./javascript.md)_
+- [JavaScript](./javascript.md)
 
-- _[JQuery](./jquery.md)_
+- [JQuery](./jquery.md)
 
-- _[HTML](./html.md)_
+- [HTML](./html.md)
 
-- _[Java](./java.md)_
+- [Java](./java.md)
 
-- _[Dart](./dart.md)_
+- [Dart](./dart.md)
 
-- _[Php](./php.md)_
+- [Php](./php.md)
 
-- _[Sql](./sql.md)_
+- [Sql](./sql.md)
 
-- _[Git](./git.md)_
+- [Git](./git.md)
 
 - [Markdown](./markdown.md)
