@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="./md.css">
-
 #### Markdown in VS-Code
 
 `Strg K, V` = Preview
@@ -15,6 +13,7 @@
 
 <details><summary>Show</summary>
 <p>
+
 #### yes, even hidden code blocks!
 
 ```python
