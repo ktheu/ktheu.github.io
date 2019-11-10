@@ -2,6 +2,11 @@
 Wenn die erste Zeile mit 4 Hash beginnt, wird in Github
 das encoding nicht erkannt und die Umlaute erscheinen falsch. Dann in der ersten Zeile zwei Leerzeichen eintippen.
 
+__[Github Flavoured Markdown Doku](https://github.github.com/gfm/#block-quotes)__
+
+__[Common Markdown Spec](https://spec.commonmark.org/0.29/#tabs)__
+ 
+
 ## Große Überschrift mit 2 Hash
 
 #### Kleinere Überschrift mit 4 Hash
