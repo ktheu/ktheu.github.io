@@ -21,3 +21,7 @@
 - [Markdown](./markdown.md)
 
 - [Markdown mit Html](./htmlWiemarkdown.html)
+
+- [Jupyter](./jupyter.md)
+
+- [Dokus](./docus.md)
