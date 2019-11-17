@@ -1,8 +1,12 @@
 ### Schnipsel
 
+- [Vorlagen](./vorlagen.md)
+
 - [Python](./python.md)
 
 - [JavaScript](./javascript.md)
+
+- [NodeJs](./nodejs.md)
 
 - [JQuery](./jquery.md)
 

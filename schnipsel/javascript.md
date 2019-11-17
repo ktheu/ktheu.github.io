@@ -15,6 +15,13 @@ var x = fs.readFileSync('input2.txt', 'utf-8');
 var res = x.split('\r\n');
 ```
 
+Die Dateien eines Verzeichnisses als Stringliste:
+```
+let dir = "d:/MyPhotos/2019copy/MSY-Tour/";
+let filenames = fs.readdirSync(dir);
+```
+ 
+
 Eine Zeile mit einer Zahl einlesen
 ```
 let k = parseInt(readline()); 
