@@ -8,6 +8,7 @@ const fs = require('fs');
 fs.writeFileSync('hello.txt', 'Hello World');
 ```
 
+Bei `sendFile` muss immer ein absoluter Pfad mitgegeben werden.
 #### Ein einfaches setup
 Den Server aufsetzen, 
 starten mit `node app.js`, stoppen mit `Strg C`,
@@ -73,7 +74,7 @@ nodemon ist ein development package, d.h. wir installieren mit `npm install node
 
 globale installation durch `npm install -g nodemon`
 
-
+ 
 #### Debug
 Den Debugger immer bei `app.js` starten, egal wo der breakpoint ist.
 
@@ -101,4 +102,65 @@ app.listen(3000);
 
 `npm install --save ejs pug express-handlebars`
 
-`npm install --sasve express body-parser ejs`
+`npm install --save express body-parser ejs`
+
+--- 
+
+#### Problem 1
+
+Eine Seite mit einem Inputfeld anzeigen und den UserInput auf dem Server ausgeben.
+
+- Ordner `Problem1` erstellen und im Terminal in den Ordner gehen.
+- `npm init` mit den default-Werten
+- in `package.json` einfügen: `"start": "nodemon app.js"`
+- `npm install express body-parser`  
+- app.js:
+
+```
+const path = require('path');
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({extended: false}));
+
+app.post('/eingabe', (req, res, next) => {
+  console.log(req.body.eingabe);
+  res.redirect('/');
+  
+});
+
+app.use('/', (req, res, next) => {
+  res.sendFile(path.join(__dirname, './', 'eingabe.html'));
+});
+
+app.listen(3000);
+```
+
+- eingabe.html (nur den Bootstrap-Container). Im input-Tag muss das name-Attribut gesetzt sein, damit der body-parser den Wert weitergibt.
+
+```
+    <div class="container">
+        <h3 class="display">Problem 1</h3>
+
+        <p>Eine Form-Group mit einem Submit-Button. Die Eingabe wird auf den Server übertragen und dort geloggt.</p>
+
+        <form class="form-inline" action="/eingabe" method="POST">
+            <div class="form-group mb-2">
+                <span> Eingabe: </span>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <input type="text" class="form-control" name="eingabe" placeholder="... etwas">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+    </div>
+```
+
+---
+
+### Problem 2
+
+Erweiterung von Problem 1: Die Eingabe soll ein lokales Verzeichnis sein. Dieses Verzeichnis soll als das 
+`public` - Verzeichnis gesetzt werden. Die Dateinamen des Verzeichnisses sollen als Liste auf derselben Seite
+ausgegeben werden.
