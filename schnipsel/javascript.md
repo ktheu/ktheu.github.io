@@ -27,6 +27,16 @@ Eine Zeile mit einer Zahl einlesen
 let k = parseInt(readline()); 
 ```
 
+#### Zufall
+Eine ganzzahlige Zufallszahl im Intervall [min, max]  [doc](https://wiki.selfhtml.org/wiki/JavaScript/Tutorials/Zufallszahlen)
+
+```
+let min = 5;
+let max = 10;
+let  x = Math.floor(Math.random() * (max - min + 1)) + min;
+```
+
+
 #### Arrays _[doc](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array)_
 
 Arrays erzeugen
@@ -67,6 +77,16 @@ Array Destructuring
 
 ```
 
+Shuffle Array nach Fisher-Yates
+```
+for (let i = allids.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * i)
+    const temp = allids[i]
+    allids[i] = allids[j]
+    allids[j] = temp
+}
+
+```
 #### Maps _[doc](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Map)_
 
 ```
