@@ -1,5 +1,15 @@
 ## Python
 
+[Installationen](./python/installation.md)
+
+[Numpy](./python/numpy.md)
+
+[Pytorch](./python/pytorch.md)
+
+Der Pfad für die Anaconda-Umgebungen:
+
+`c:\Users\khthe\Anaconda3\`
+
 ### Einlesen von Daten
 
 Mehrere Zahlen, die in einer Zeile stehen.

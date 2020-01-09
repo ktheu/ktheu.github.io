@@ -1,12 +1,18 @@
 ### Schnipsel
 
+- [NodeJs](./nodejs.md)
+
+- [Bootstrap](./bootstrap.md)
+
 - [Vorlagen](./vorlagen.md)
 
 - [Python](./python.md)
 
-- [JavaScript](./javascript.md)
+- [Pytorch](pytorch/pytorch.md)
 
-- [NodeJs](./nodejs.md)
+- [Neuronale Netze](./neuronaleNetze.md)
+
+- [JavaScript](./javascript.md)
 
 - [Mongoose](./mongoose.md)
 

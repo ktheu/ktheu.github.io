@@ -1,166 +1,51 @@
-__[Docu]()__
+## NodeJS
+
+
+__[Doc]()__
+
+
+
+[Simple](./node/serveAPage.md) - Eine Seite anzeigen
+
+[Input](./node/input.md) - Auf der Clientseite einen Input abholen und auf der Serverseite ausgeben.
+
+[Session1](./node/session1.md) - Eine Sessionvariable temporär im Server-Memory speichern.
+
+[Session2](./node/session2.md) - Eine Sessionvariable in MongoDB speichern.
+
+[SignIn](./node/signin.md) - Benutzername und Passwort in MongoDB speichern. Zugriff auf eine Seite nur bei Login.
+
+[Email](./node/sendgrid.md) - Email mit SendGrid verschicken
+
+[Csrf](./node/csrf.md) - CSRF Protection
+
+--- 
 
 `node -v` in cmd für die Version
+`npm init` am Anfang
+
+Globale Installation von nodemon: `npm install -g nodemon`
+
+`  "start": "nodemon app.js"`  bei scripts in `package.json` eintragen, danach:
+`npm start`, stoppen mit `Strg C`, aufrufbar mit `localhost:3000`
+
+---
+Häufige Installs:
+
+`npm install --save express body-parser ejs `
+
+----
+
 
 Text in eine Datei schreiben:
-```
+```javascript
 const fs = require('fs');
 fs.writeFileSync('hello.txt', 'Hello World');
 ```
-
-Bei `sendFile` muss immer ein absoluter Pfad mitgegeben werden.
-#### Ein einfaches setup
-Den Server aufsetzen, 
-starten mit `node app.js`, stoppen mit `Strg C`,
- aufrufbar mit `localhost:3000`
-
-```
-const http = require('http');
-const routes = require('./routes');
-console.log(routes.someText);
-const server = http.createServer(routes.handler);
-server.listen(3000);
-```
-Die Routes Logik
-```
-const fs = require('fs');
-
-const requestHandler = (req, res) => {
-  const url = req.url;
-  const method = req.method;
-  if (url === '/') {
-    res.write('<html>');
-    res.write('<head><title>Enter Message</title><head>');
-    res.write(
-      '<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>'
-    );
-    res.write('</html>');
-    return res.end();
-  }
-  if (url === '/message' && method === 'POST') {
-    const body = [];
-    req.on('data', chunk => {
-      console.log(chunk);
-      body.push(chunk);
-    });
-    return req.on('end', () => {
-      const parsedBody = Buffer.concat(body).toString();
-      const message = parsedBody.split('=')[1];
-      fs.writeFile('message.txt', message, err => {
-        res.statusCode = 302;
-        res.setHeader('Location', '/');
-        return res.end();
-      });
-    });
-  }
-  res.setHeader('Content-Type', 'text/html');
-  res.write('<html>');
-  res.write('<head><title>My First Page</title><head>');
-  res.write('<body><h1>Hello from my Node.js Server!</h1></body>');
-  res.write('</html>');
-  res.end();
-};
-
-exports.handler = requestHandler;
-exports.someText = 'Some hard coded text';
-```
-
-#### npm
-`npm init` für ein erstes JSON-File, dort mit bei scripts: `"start": "node app.js"`,
-jetzt kann der server mit `npm start` gestartet werden, andere scripts mit `npm run ...`.
-
-
-nodemon ist ein development package, d.h. wir installieren mit `npm install nodemon --save-def`, ändern `"start": "nodemon app.js"`
-
-globale installation durch `npm install -g nodemon`
 
  
 #### Debug
 Den Debugger immer bei `app.js` starten, egal wo der breakpoint ist.
 
-### Express
-`npm install --save express`
-`npm install --save body-parser`
 
-```
-const http = require('http');
-const express = require('express');
-const app = express();
 
-app.use((req,res,next) => {
-    console.log('In the middleware');
-    next();
-})
-app.use((req,res,next) => {
-    console.log('In another the middleware');
-    res.send('<h1> Hello from Express </h1>');
-     
-})
-app.listen(3000);
-```
-#### Templating Engines
-
-`npm install --save ejs pug express-handlebars`
-
-`npm install --save express body-parser ejs`
-
---- 
-
-#### Problem 1
-
-Eine Seite mit einem Inputfeld anzeigen und den UserInput auf dem Server ausgeben.
-
-- Ordner `Problem1` erstellen und im Terminal in den Ordner gehen.
-- `npm init` mit den default-Werten
-- in `package.json` einfügen: `"start": "nodemon app.js"`
-- `npm install express body-parser`  
-- app.js:
-
-```
-const path = require('path');
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-
-app.use(bodyParser.urlencoded({extended: false}));
-
-app.post('/eingabe', (req, res, next) => {
-  console.log(req.body.eingabe);
-  res.redirect('/');
-  
-});
-
-app.use('/', (req, res, next) => {
-  res.sendFile(path.join(__dirname, './', 'eingabe.html'));
-});
-
-app.listen(3000);
-```
-
-- eingabe.html (nur den Bootstrap-Container). Im input-Tag muss das name-Attribut gesetzt sein, damit der body-parser den Wert weitergibt.
-
-```
-    <div class="container">
-        <h3 class="display">Problem 1</h3>
-
-        <p>Eine Form-Group mit einem Submit-Button. Die Eingabe wird auf den Server übertragen und dort geloggt.</p>
-
-        <form class="form-inline" action="/eingabe" method="POST">
-            <div class="form-group mb-2">
-                <span> Eingabe: </span>
-            </div>
-            <div class="form-group mx-sm-3 mb-2">
-                <input type="text" class="form-control" name="eingabe" placeholder="... etwas">
-            </div>
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </form>
-    </div>
-```
-
----
-
-### Problem 2
-
-Erweiterung von Problem 1: Die Eingabe soll ein lokales Verzeichnis sein. Dieses Verzeichnis soll als das 
-`public` - Verzeichnis gesetzt werden. Die Dateinamen des Verzeichnisses sollen als Liste auf derselben Seite
-ausgegeben werden.

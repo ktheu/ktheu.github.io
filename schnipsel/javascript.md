@@ -4,6 +4,8 @@
 ```
 console.log(typeof 'blubber');  // Typ einer Variablen
 
+let x, y;
+let a = 1; b = 2;
 ```
 
 #### Einlesen von Daten
