@@ -4,7 +4,7 @@
 
 [Numpy](./python/numpy.md)
 
-[Pytorch](./python/pytorch.md)
+[Pytorch](./pytorch/pytorch.md)
 
 Der Pfad für die Anaconda-Umgebungen:
 

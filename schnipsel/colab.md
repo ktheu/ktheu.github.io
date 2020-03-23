@@ -68,3 +68,7 @@ Die Daten dann nach Google-Drive importieren (braucht man in der Regel nicht)
 !cp flower_data gdrive/'My Drive' -r
 ```
 
+Einen Ordner mit Inhalt löschen
+```
+!rm -rf 'data/bears/grizzly'
+```
