@@ -55,31 +55,7 @@ let port = process.env.PORT ? process.env.PORT : 3000;    // Glitch or localhost
 app.listen(port);
 ```
 
-in eingabe.ejs
-``` 
-        <p class="h2 mt-4">Session Variable</p>
 
-        <form class="form-inline" action="/eingabe" method="POST">
-            <div class="form-group mb-2">
-                <span> Eingabe: </span>
-            </div>
-            <div class="form-group mx-sm-3 mb-2">
-                <input type="text" class="form-control" name="eingabe">
-            </div>
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-
-        </form>
-
-        <div class="my-4"><a href="/getEingabe" class="btn btn-primary">Get Eingabe</a></div>
-
-        <% if (eingabe) { %>
-        <p>Die Eingabe war: <%=eingabe%></p>
-        <%} else {%>
-        <p>In dieser Session wurde noch keine Eingabe gemacht.</p>
-        <%}%>
-        
-        </div>
-```
 
 in .data/param.js
 
