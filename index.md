@@ -6,4 +6,4 @@ __[InfoAG](https://ktheu.github.io/InfoAG/)__
 
 __[InfoKurs](https://ktheu.github.io/InfoKurs/)__
 
--------------------------------------------------
+------------------------------------------------ __[-](https://ktheu.github.io/Schnipsel/)__
