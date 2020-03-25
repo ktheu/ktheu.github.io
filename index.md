@@ -8,4 +8,4 @@ __[InfoKurs](https://ktheu.github.io/InfoKurs/)__
 
 ------------------------------------------------ 
 
-__[-](https://ktheu.github.io/InfoAG/)__
+__[-](https://ktheu.github.io/Schnipsel/)__
