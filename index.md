@@ -8,7 +8,7 @@ __[InfoKurs](https://ktheu.github.io/InfoKurs/)__
 
 __[MathePlus](https://ktheu.github.io/MathePlus/)__
 
-__[Jugendwettbewerb Informatik](https://ktheu.github.io/Jwinf/)__
+__[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)__
 
 ------------------------------------------------ 
 
