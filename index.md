@@ -1,15 +1,15 @@
 ### Materialien zu den Informatik-Kursen
 
-----------------------------------------------
+---
 
-__[InfoAG](https://ktheu.github.io/InfoAG/)__  -  __[CSCircles](https://cscircles.cemc.uwaterloo.ca/de/)__
+**[InfoAG](https://ktheu.github.io/InfoAG/)** - **[CSCircles](https://cscircles.cemc.uwaterloo.ca/de/)**
 
-__[InfoKurs](https://ktheu.github.io/InfoKurs/)__
+**[InfoKurs](https://ktheu.github.io/InfoKurs/)**
 
-__[MathePlus](https://ktheu.github.io/MathePlus/)__
+**[MathePlus](https://ktheu.github.io/MathePlus/)**
 
-__[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)__
+**[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)**
 
------------------------------------------------- 
+**[Informatik Biber](https://ktheu.github.io/jwinf/biber/index.md)**
 
- 
+---
