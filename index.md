@@ -10,6 +10,8 @@
 
 **[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)**
 
-**[Informatik Biber](https://ktheu.github.io/biberinf/)**
+**[AlgorithmenAG](https://ktheu.github.io/algorithmenAG/)**
+
+**[Informatik Biber](https://ktheu.github.io/biber/)**
 
 ---
