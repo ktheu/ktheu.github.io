@@ -2,7 +2,7 @@
 
 ---
 
-**[InfoAG](https://ktheu.github.io/InfoAG/)** - **[CSCircles](https://cscircles.cemc.uwaterloo.ca/de/)**
+**[InfoAG](https://ktheu.github.io/InfoAG/)** 
 
 **[InfoKurs](https://ktheu.github.io/InfoKurs/)**
 
