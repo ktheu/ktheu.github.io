@@ -12,6 +12,6 @@
 
 **[AlgorithmenAG](https://ktheu.github.io/AlgorithmenAG/)**
 
-**[Sonstiges](https://ktheu.github.io/biber/)**
+**[Biber](https://ktheu.github.io/biber/)**
 
 ---
