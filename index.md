@@ -12,7 +12,7 @@
 
 **[AlgorithmenAG](https://ktheu.github.io/AlgorithmenAG/)**
 
-**[Training](https://ktheu.github.io/PythonUebungen/)**
+**[Training](https://ktheu.github.io/Training/)**
 
 
 
