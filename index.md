@@ -10,7 +10,7 @@
 
 **[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)**
 
-**[Programmierwettbewerbe](https://ktheu.github.io/AlgorithmenAG/)**
+**[Programmierwettbewerbe](https://ktheu.github.io/Programmierwettbewerbe/)**
 
 **[Training](https://ktheu.github.io/Training/)**
 
