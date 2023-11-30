@@ -2,7 +2,6 @@
 
 ---
 
-
 **[InfoKurs](https://ktheu.github.io/InfoKurs/)**
 
 **[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)**
@@ -11,12 +10,10 @@
 
 **[PythonLernen](https://ktheu.github.io/PythonLernen/)**
 
-**[Training](https://ktheu.github.io/Training/)**
+**[PythonTraining](https://ktheu.github.io/Training/)**
 
 **[MathePlus](https://ktheu.github.io/MathePlus/)**
 
 **[P5JS](https://ktheu.github.io/InfoAG/)** 
-
-
 
 ---
