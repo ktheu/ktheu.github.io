@@ -11,7 +11,7 @@
 
 **[PythonLernen](https://ktheu.github.io/PythonLernen/)**
 
-**[PythonTraining](https://ktheu.github.io/Training/)**
+**[PythonTraining](https://github.com/ktheu/Training#readme)**
 
 **[MathePlus](https://ktheu.github.io/MathePlus/)**
 
