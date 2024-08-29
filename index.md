@@ -2,6 +2,8 @@
 
 ---
 
+**[Brückenkurs](https://github.com/ktheu/Brueckenkurs/blob/main/README.md)**
+
 **[InfoKurs](https://ktheu.github.io/InfoKurs/)**
 
 **[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)**
