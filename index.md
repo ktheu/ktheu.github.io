@@ -4,7 +4,7 @@
 
 **[Brückenkurs](https://github.com/ktheu/Brueckenkurs/blob/main/README.md)**
 
-**[InfoKurs](https://ktheu.github.io/InfoKurs/)**
+**[InfoKurs](https://github.com/ktheu/InfoKurs#readme.md)** 
 
 **[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)**
 
