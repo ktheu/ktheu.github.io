@@ -12,7 +12,7 @@
 
 **[PythonLernen](https://github.com/ktheu/PythonLernen#readme)**
 
-**[PythonTraining](https://github.com/ktheu/Training#readme)**
+<!-- **[PythonTraining](https://github.com/ktheu/Training#readme)** -->
 
 **[MathePlus](https://ktheu.github.io/MathePlus/)**
 
