@@ -10,9 +10,7 @@
 
 **[Programmierwettbewerbe](https://github.com/ktheu/Programmierwettbewerbe#readme)**
 
-**[PythonLernen](https://github.com/ktheu/PythonLernen#readme)**
-
-<!-- **[PythonTraining](https://github.com/ktheu/Training#readme)** -->
+**[PythonUebungen](https://ktheu.github.io/PythonUebungen/)**
 
 **[MathePlus](https://ktheu.github.io/MathePlus/)**
 
