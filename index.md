@@ -12,6 +12,8 @@
 
 **[PythonUebungen](https://ktheu.github.io/PythonUebungen/)**
 
+**[PythonThemen](https://ktheu.github.io/PythonThemen/)**
+
 **[MathePlus](https://ktheu.github.io/MathePlus/)**
 
 ---
