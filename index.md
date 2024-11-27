@@ -14,6 +14,10 @@
 
 **[PythonThemen](https://ktheu.github.io/PythonThemen/)**
 
-**[MathePlus](https://ktheu.github.io/MathePlus/)**
+**[Codingame Aufgaben](https://github.com/ktheu/InfoKurs/blob/gh-pages/Codingame/codingame.md)**
 
 ---
+
+**[MathePlus](https://ktheu.github.io/MathePlus/)**
+
+
