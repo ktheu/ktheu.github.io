@@ -12,7 +12,7 @@
 
 **[PythonUebungen](https://ktheu.github.io/PythonUebungen/)**
 
-**[PythonThemen](https://ktheu.github.io/PythonThemen/)**
+**[PythonThemen](https://github.com/ktheu/PythonThemen/blob/main/readme.md)**
 
 **[Codingame Aufgaben](https://github.com/ktheu/InfoKurs/blob/gh-pages/Codingame/codingame.md)**
 
