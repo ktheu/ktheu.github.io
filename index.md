@@ -18,4 +18,9 @@
 
 **[MathePlus](https://ktheu.github.io/MathePlus/)**
 
+---
+
+**[Hinweise](https://github.com/ktheu/InfoKurs/blob/gh-pages/hinweise.md)**
+
+
 
