@@ -14,6 +14,8 @@
 
 **[Codingame Aufgaben](https://github.com/ktheu/InfoKurs/blob/gh-pages/Codingame/codingame.md)**
 
+**[ComThink](https://github.com/ktheu/comThink)**
+
 ---
 
 **[MathePlus](https://ktheu.github.io/MathePlus/)**
