@@ -1,7 +1,7 @@
 ### Materialien zu den Informatik-Kursen
 
 
-**[Python]**(https://github.com/ktheu/PythonLernen)
+**[Python](https://github.com/ktheu/PythonLernen)**
 
 ---
 
