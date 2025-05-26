@@ -1,5 +1,8 @@
 ### Materialien zu den Informatik-Kursen
 
+
+**[Python]**
+
 ---
 
 **[Brückenkurs](https://github.com/ktheu/Brueckenkurs/blob/main/README.md)**
@@ -9,8 +12,6 @@
 **[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)**
 
 **[Programmierwettbewerbe](https://github.com/ktheu/Programmierwettbewerbe#readme)**
-
-**[PythonUebungen](https://ktheu.github.io/PythonUebungen/)**
 
 **[Codingame Aufgaben](https://github.com/ktheu/InfoKurs/blob/gh-pages/Codingame/codingame.md)**
 
