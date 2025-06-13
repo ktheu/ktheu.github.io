@@ -21,6 +21,10 @@
 
 **[MathePlus](https://ktheu.github.io/MathePlus/)**
 
+**[Mathe mit Python](https://github.com/ktheu/MatheMitPython/blob/main/readme.md)
+
+
+
 ---
 
 **[Hinweise](https://github.com/ktheu/InfoKurs/blob/gh-pages/hinweise.md)**
