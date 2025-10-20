@@ -11,7 +11,8 @@
 
 **[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)**
 
-**[Programmierwettbewerbe](https://github.com/ktheu/Programmierwettbewerbe#readme)**
+**[Programmierwettbewerbe](https://ktheu.github.io/Programmierwettbewerbe/)**
+<!-- **[Programmierwettbewerbe](https://github.com/ktheu/Programmierwettbewerbe#readme)** -->
 
 **[Codingame Aufgaben](https://github.com/ktheu/InfoKurs/blob/gh-pages/Codingame/codingame.md)**
 
