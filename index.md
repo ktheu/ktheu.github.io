@@ -1,7 +1,7 @@
 ### Materialien zu den Informatik-Kursen
 
 
-**[Python]( https://ktheu.github.io/PythonLernen/)**
+**[Python Lernen]( https://ktheu.github.io/PythonLernen/)**
 
 ---
 
@@ -12,8 +12,6 @@
 ---
 
 **[Python Themen](https://ktheu.github.io/PythonThemen/)**
-
----
 
 **[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)**
 
@@ -27,7 +25,7 @@
 
 **[MathePlus](https://ktheu.github.io/MathePlus/)**
 
-**[Mathe mit Python]( https://ktheu.github.io/MatheMitPython/)**
+**[Mathe mit Python](https://ktheu.github.io/MatheMitPython/)**
 
 ---
 
