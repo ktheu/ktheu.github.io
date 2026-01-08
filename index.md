@@ -11,15 +11,11 @@
 
 ---
 
-**[Python Themen](https://ktheu.github.io/PythonThemen/)**
+**[Python Themen und Sonstiges](https://ktheu.github.io/PythonThemen/)**
 
 **[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)**
 
 **[Programmierwettbewerbe](https://ktheu.github.io/Programmierwettbewerbe/)**
-
-**[Codingame Aufgaben](https://github.com/ktheu/InfoKurs/blob/gh-pages/Codingame/codingame.md)**
-
-**[ComThink](https://ktheu.github.io/comThink/)**
 
 ---
 
