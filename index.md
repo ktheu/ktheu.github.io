@@ -5,7 +5,7 @@
 
 ---
 
-**[Brückenkurs]( https://ktheu.github.io/Brueckenkurs/)**
+**[Brückenkurs](https://ktheu.github.io/InfoKursN/brueckenkurs.md)**
 
 **[InfoKurs](https://github.com/ktheu/InfoKurs/blob/gh-pages/README.md)**
 
