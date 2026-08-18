@@ -25,7 +25,9 @@
 
 ---
 
-**[Hinweise](https://github.com/ktheu/InfoKurs/blob/gh-pages/hinweise.md)**
+**[Sonstiges](https://ktheu.github.io/InfoKursN/sonstiges.md)**
+
+
 
 
 
