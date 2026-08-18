@@ -19,12 +19,6 @@
 
 ---
 
-**[MathePlus](https://ktheu.github.io/MathePlus/)**
-
-**[Mathe mit Python](https://ktheu.github.io/MatheMitPython/)**
-
----
-
 **[Sonstiges](https://ktheu.github.io/InfoKursN/sonstiges.md)**
 
 
