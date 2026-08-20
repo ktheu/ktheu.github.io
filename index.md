@@ -7,7 +7,7 @@
 
 **[Brückenkurs](https://ktheu.github.io/InfoKursN/brueckenkurs.md)**
 
-**[InfoKurs](https://github.com/ktheu/InfoKurs/blob/gh-pages/README.md)**
+**[InfoKurs](https://ktheu.github.io/InfoKursN/basiskurs.md)**
 
 ---
 
