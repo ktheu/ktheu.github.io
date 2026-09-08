@@ -11,10 +11,6 @@
 
 ---
 
-**[Python Themen und Sonstiges](https://ktheu.github.io/PythonThemen/)**
-
-**[Jugendwettbewerb Informatik](https://ktheu.github.io/jwinf/)**
-
 **[Programmierwettbewerbe](https://ktheu.github.io/Programmierwettbewerbe/)**
 
 ---
