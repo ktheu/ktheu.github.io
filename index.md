@@ -5,9 +5,9 @@
 
 ---
 
-**[Brückenkurs](https://ktheu.github.io/InfoKursN/brueckenkurs.md)**
+**[Brückenkurs](https://ktheu.github.io/InfoKursN/brueckenkurs)**
 
-**[InfoKurs](https://ktheu.github.io/InfoKursN/basiskurs.md)**
+**[InfoKurs](https://ktheu.github.io/InfoKursN/basiskurs)**
 
 ---
 
@@ -15,7 +15,7 @@
 
 ---
 
-**[Sonstiges](https://ktheu.github.io/InfoKursN/sonstiges.md)**
+**[Sonstiges](https://ktheu.github.io/InfoKursN/sonstiges)**
 
 
 
