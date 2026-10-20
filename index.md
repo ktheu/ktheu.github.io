@@ -1,8 +1,5 @@
 ### Materialien zu den Informatik-Kursen
 
-
-**[Python Lernen]( https://ktheu.github.io/PythonLernen/)**
-
 ---
 
 **[Brückenkurs](https://ktheu.github.io/InfoKursN/brueckenkurs)**
